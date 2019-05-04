@@ -9,11 +9,12 @@ export const getContacts = () => async dispatch => {
         payload: res.data
     });
 };
-export const deleteContact = (id) => {
-    return {
+export const deleteContact = (id) => async dispatch => {
+    await axios.delete(`https://jsonplaceholder.typicode.com/users/${id}`);
+    dispatch ({
         type: DELETE_CONTACT,
         payload: id
-    };
+    });
 };
 export const addContact = (contact) => {
     return {
