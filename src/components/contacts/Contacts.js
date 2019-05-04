@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Contact from './Contact';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+
 
 
 class Contacts extends Component {
