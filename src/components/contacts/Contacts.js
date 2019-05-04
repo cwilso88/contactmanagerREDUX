@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Contact from './Contact';
+import { connect } from 'react-redux';
+
 
 class Contacts extends Component {
   
