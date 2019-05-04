@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import TextInputGroup from '../layout/TextInputGroup';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { addContact } from '../../actions/contactActions',
+import { addContact } from '../../actions/contactActions';
 import uuid from 'uuid';
 
 class AddContact extends Component {
@@ -41,7 +41,8 @@ class AddContact extends Component {
       phone
     };
 
-    //// SUBMIT CONTACT ////
+    // ADD NEW CONTACT
+    this.props.addContact(newContact);
 
     // Clear State
     this.setState({
