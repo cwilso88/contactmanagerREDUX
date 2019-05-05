@@ -102,4 +102,12 @@ class EditContact extends Component {
   }
 }
 
-export default EditContact;
+EditContact.propTypes = {
+  contact: PropTypes.object.isRequired,
+  getContact: PropTypes.func.isRequired
+}
+
+const mapStateToProps = state => ({
+  contact: state.contact.contact
+});
+export default connect(mapStateToProps, EditContact)(EditContact);
