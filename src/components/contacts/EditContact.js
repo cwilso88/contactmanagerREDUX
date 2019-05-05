@@ -12,6 +12,11 @@ class EditContact extends Component {
     errors: {}
   };
 
+  componentDidMount() {
+    const { id } = this.props.match.params;
+    this.props.getContact(id);
+  }
+
   onSubmit = (e) => {
     e.preventDefault();
 
