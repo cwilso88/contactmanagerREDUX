@@ -12,6 +12,12 @@ class EditContact extends Component {
     errors: {}
   };
 
+  componentDidUpdate(props, state, snapshot) {
+    if (this.props.contact !== props.contact) {
+        this.setState(this.props.contact);
+    }
+}
+
   componentDidMount() {
     const { id } = this.props.match.params;
     this.props.getContact(id);
@@ -115,4 +121,4 @@ EditContact.propTypes = {
 const mapStateToProps = state => ({
   contact: state.contact.contact
 });
-export default connect(mapStateToProps, EditContact)(EditContact);
+export default connect(mapStateToProps, { getContact })(EditContact);
