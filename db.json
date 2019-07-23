@@ -1,5 +1,4 @@
-{
-"people": [
+[
     {
         "id": 1,
         "name": "Leanne Graham",
@@ -130,5 +129,4 @@
         "location": "Office"
       } 
     ]
-}
  
