@@ -9,6 +9,7 @@ import NotFound from './components/pages/NotFound';
 
 import { Provider } from 'react-redux';
 import store from './store';
+import "./db.json";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
