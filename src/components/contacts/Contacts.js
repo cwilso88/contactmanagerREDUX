@@ -14,10 +14,18 @@ class Contacts extends Component {
   
   render() {
     const { contacts } = this.props;
+    const blue = "#0f2862";
+    const red = "#9e363a";
+    const greyBlue = "#4f5f76";
+    const purple = "#091f36";
+
+    const title = {color: "#9e363a"};
+
+
     return (
       <React.Fragment>
-        <h1 className="display-4 mb-2">
-          <span className="text-danger">Contact</span> List
+        <h1 className="display-4 mb-2" style={{ color: "#4f5f76" }}>
+          <span style={{ color: "#0f2862" }}>Team</span> Management
         </h1>
         {contacts.map(contact => (
           <Contact key={contact.id} contact={contact} />
