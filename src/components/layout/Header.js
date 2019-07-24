@@ -5,9 +5,12 @@ import { Link } from 'react-router-dom';
 const Header = props => {
   const { branding } = props;
   return (
-    <nav className="navbar navbar-expand-sm navbar-dark bg-danger mb-3 py-0">
+    <nav className="navbar navbar-expand-sm navbar-dark mb-3" style={{ backgroundColor: "#6ed3cf", padding: "20px 0px" }}>
       <div className="container">
-        <a href="/" className="navbar-brand">
+      <div className="logo-image">
+        <img src="src/components/layout/logo.png" alt="logo"/>
+      </div>
+        <a href="/" className="navbar-brand" style={{ color: "#9068be", fontSize: "30px" }}>
           {branding}
         </a>
         <div>
