@@ -27,6 +27,9 @@ class Contacts extends Component {
         <h1 className="display-4 mb-2" style={{ color: "#4f5f76" }}>
           <span style={{ color: "#0f2862" }}>Team</span> Management
         </h1>
+        <p>
+          Manage the department team members and overall goals.
+        </p>
         {contacts.map(contact => (
           <Contact key={contact.id} contact={contact} />
         ))}
