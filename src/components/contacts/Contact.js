@@ -33,7 +33,7 @@ class Contact extends Component {
           />
           <i
             className="fas fa-times"
-            style={{ cursor: 'pointer', float: 'right', color: 'red' }}
+            style={{ cursor: 'pointer', float: 'right', color: '#9e363a' }}
             onClick={this.onDeleteClick.bind(this, id)}
           />
           <Link to={`contact/edit/${id}`}>
