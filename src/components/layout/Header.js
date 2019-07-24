@@ -20,7 +20,7 @@ const Header = props => {
       <div className="logo-image">
         <img src={logo} alt="logo" style={imageStyle}/>
       </div>
-        <a href="/" className="navbar-brand">
+        <a href="/" className="navbar-brand" style={{ textTransform: "uppercase", backgroundColor: "#091f36", padding: "10px", borderRadius: "10px" }}>
           {branding}
         </a>
         <div>
