@@ -15,7 +15,7 @@ class Contact extends Component {
   };
 
   render() {
-    const { id, name, email, phone, department, status, location } = this.props.contact;
+    const { id, name, email, phone, department, status, location, image } = this.props.contact;
     const { showContactInfo } = this.state;
 
     const listItemStyle = {backgroundColor: "#f9f9f9", borderColor: "#C0C0C0"};
@@ -23,8 +23,12 @@ class Contact extends Component {
 
     return (
       <div className="card card-body mb-3">
+        <div>
+          <img className="ui small circular image" src={image} alt="profile" style={{ paddingBottom: "10px" }} />
+        </div>
+        
         <h4>
-          {name}{' '}
+          {name}
           <i
             onClick={() =>
               this.setState({
@@ -51,6 +55,7 @@ class Contact extends Component {
             />
           </Link>
         </h4>
+        
         {showContactInfo ? (
           <ul className="list-group">
             <li className="list-group-item" style={listItemStyle}> <i className="fas fa-envelope"></i> <span style={listTitleStyle}>Email:</span> {email}</li>
