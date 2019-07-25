@@ -57,11 +57,12 @@ class AddContact extends Component {
   onChange = e => this.setState({ [e.target.name]: e.target.value });
 
   render() {
-    const { name, email, phone, errors } = this.state;
-
+    const { name, email, phone, department, location, status, errors } = this.state;
+    const cardHeaderStyles = {backgroundColor: "#D3D3D3", color: "#0f2862", textTransform: "uppercase", letterSpacing:"2px", fontWeight: "bold", textAlign: "center" };
+    const formButtonStyles = {backgroundColor: "#D3D3D3"};
     return (
       <div className="card mb-3">
-        <div className="card-header">Add Contact</div>
+        <div className="card-header" style={cardHeaderStyles}>Add Contact</div>
         <div className="card-body">
           <form onSubmit={this.onSubmit}>
             <TextInputGroup
