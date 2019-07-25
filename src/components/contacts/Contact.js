@@ -18,6 +18,9 @@ class Contact extends Component {
     const { id, name, email, phone, department, status, location } = this.props.contact;
     const { showContactInfo } = this.state;
 
+    const listItemStyle = {backgroundColor: "#f9f9f9", borderColor: "#C0C0C0"};
+    const listTitleStyle = {color: "#0f2862", fontWeight: "bold"};
+
     return (
       <div className="card card-body mb-3">
         <h4>
@@ -50,8 +53,8 @@ class Contact extends Component {
         </h4>
         {showContactInfo ? (
           <ul className="list-group">
-            <li className="list-group-item">Email: {email}</li>
-            <li className="list-group-item">Phone: {phone}</li>
+            <li className="list-group-item" style={listItemStyle}> <span style={listTitleStyle}>Email:</span> {email}</li>
+            <li className="list-group-item" style={listItemStyle}> <span style={listTitleStyle}>Phone</span>: {phone}</li>
           </ul>
         ) : null}
       </div>
