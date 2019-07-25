@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import logo from "./logo.png";
+import logo from "./logored.png";
 
 const Header = props => {
   const { branding } = props;
