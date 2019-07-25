@@ -72,46 +72,48 @@ class EditContact extends Component {
 
   render() {
     const { name, email, phone, errors } = this.state;
-    const cardHeaderStyles = {backgroundColor: "#D3D3D3", color: "#0f2862", textTransform: "uppercase", letterSpacing:"2px", fontWeight: "bold", textAlign: "center" };
+    const cardHeaderStyles = {backgroundColor: "#D3D3D3", color: "#0f2862", textTransform: "uppercase", letterSpacing:"2px", fontWeight: "bold", textAlign: "center", padding: "20px" };
     const formButtonStyles = {backgroundColor: "#0f2862", color: "#f9f9f9", letterSpacing: "2px"};
 
     return (
-      <div className="card mb-3">
-        <div className="card-header" style={cardHeaderStyles}>Edit Contact</div>
-        <div className="card-body">
-          <form onSubmit={this.onSubmit}>
-            <TextInputGroup
-              label="Name"
-              name="name"
-              placeholder="Enter Name"
-              value={name}
-              onChange={this.onChange}
-              error={errors.name}
-            />
-            <TextInputGroup
-              label="Email"
-              name="email"
-              type="email"
-              placeholder="Enter Email"
-              value={email}
-              onChange={this.onChange}
-              error={errors.email}
-            />
-            <TextInputGroup
-              label="Phone"
-              name="phone"
-              placeholder="Enter Phone"
-              value={phone}
-              onChange={this.onChange}
-              error={errors.phone}
-            />
-            <input
-              type="submit"
-              value="Update Contact"
-              className="btn btn-light btn-block"
-              style={formButtonStyles}
-            />
-          </form>
+      <div style={{ height: "90vh" }}>
+        <div className="card mb-3" style={{ marginTop: "70px" }}>
+          <div className="card-header" style={cardHeaderStyles}>Edit Contact</div>
+          <div className="card-body">
+            <form onSubmit={this.onSubmit}>
+              <TextInputGroup
+                label="Name"
+                name="name"
+                placeholder="Enter Name"
+                value={name}
+                onChange={this.onChange}
+                error={errors.name}
+              />
+              <TextInputGroup
+                label="Email"
+                name="email"
+                type="email"
+                placeholder="Enter Email"
+                value={email}
+                onChange={this.onChange}
+                error={errors.email}
+              />
+              <TextInputGroup
+                label="Phone"
+                name="phone"
+                placeholder="Enter Phone"
+                value={phone}
+                onChange={this.onChange}
+                error={errors.phone}
+              />
+              <input
+                type="submit"
+                value="Update Contact"
+                className="btn btn-light btn-block"
+                style={formButtonStyles}
+              />
+            </form>
+          </div>
         </div>
       </div>
     );

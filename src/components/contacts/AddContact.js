@@ -58,11 +58,11 @@ class AddContact extends Component {
 
   render() {
     const { name, email, phone, department, location, status, errors } = this.state;
-    const cardHeaderStyles = {backgroundColor: "#D3D3D3", color: "#0f2862", textTransform: "uppercase", letterSpacing:"2px", fontWeight: "bold", textAlign: "center" };
+    const cardHeaderStyles = {backgroundColor: "#D3D3D3", color: "#0f2862", textTransform: "uppercase", letterSpacing:"2px", fontWeight: "bold", textAlign: "center", padding: "20px" };
     const formButtonStyles = {backgroundColor: "#0f2862", color: "#f9f9f9", letterSpacing: "2px"};
     return (
       <div style={{ height: "90vh"}}>
-        <div className="card mb-3">
+        <div className="card mb-3" style={{ marginTop: "70px" }}>
           <div className="card-header" style={cardHeaderStyles}>Add New Team Member</div>
           <div className="card-body">
             <form onSubmit={this.onSubmit}>

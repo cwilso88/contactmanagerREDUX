@@ -19,7 +19,7 @@ class Contact extends Component {
     const { showContactInfo } = this.state;
 
     const listItemStyle = {backgroundColor: "#f9f9f9", borderColor: "#C0C0C0"};
-    const listTitleStyle = {color: "#0f2862", fontWeight: "bold"};
+    const listTitleStyle = {color: "#0f2862", fontWeight: "bold", paddingLeft: "5px"};
 
     return (
       <div className="card card-body mb-3">
@@ -53,10 +53,10 @@ class Contact extends Component {
         </h4>
         {showContactInfo ? (
           <ul className="list-group">
-            <li className="list-group-item" style={listItemStyle}> <span style={listTitleStyle}>Email:</span> {email}</li>
-            <li className="list-group-item" style={listItemStyle}> <span style={listTitleStyle}>Phone</span>: {phone}</li>
-            <li className="list-group-item" style={listItemStyle}> <span style={listTitleStyle}>Department</span>: {department}</li>
-            <li className="list-group-item" style={listItemStyle}> <span style={listTitleStyle}>Work Location</span>: {location}</li>
+            <li className="list-group-item" style={listItemStyle}> <i className="fas fa-envelope"></i> <span style={listTitleStyle}>Email:</span> {email}</li>
+            <li className="list-group-item" style={listItemStyle}> <i className="fas fa-phone"></i> <span style={listTitleStyle}>Phone</span>: {phone}</li>
+            <li className="list-group-item" style={listItemStyle}> <i className="fas fa-sitemap"></i> <span style={listTitleStyle}>Department</span>: {department}</li>
+            <li className="list-group-item" style={listItemStyle}> <i className="fas fa-map-marker-alt"></i> <span style={listTitleStyle}>Work Location</span>: {location}</li>
             <li className="list-group-item" style={listItemStyle}> <span style={listTitleStyle}>Current Status</span>: {status}</li>
           </ul>
         ) : null}
