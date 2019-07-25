@@ -55,6 +55,9 @@ class Contact extends Component {
           <ul className="list-group">
             <li className="list-group-item" style={listItemStyle}> <span style={listTitleStyle}>Email:</span> {email}</li>
             <li className="list-group-item" style={listItemStyle}> <span style={listTitleStyle}>Phone</span>: {phone}</li>
+            <li className="list-group-item" style={listItemStyle}> <span style={listTitleStyle}>Department</span>: {department}</li>
+            <li className="list-group-item" style={listItemStyle}> <span style={listTitleStyle}>Work Location</span>: {location}</li>
+            <li className="list-group-item" style={listItemStyle}> <span style={listTitleStyle}>Current Status</span>: {status}</li>
           </ul>
         ) : null}
       </div>
