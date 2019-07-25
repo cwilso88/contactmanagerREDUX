@@ -22,7 +22,7 @@ class App extends Component {
       <Router>
         <div className="App" style={{ backgroundImage: "url(https://i.pinimg.com/originals/f4/54/f7/f454f75292f93e2b6c66846a857edf44.jpg)" }}>
           <Header branding="Tech Consulting" />
-          <div className="container" style={{background: "#f9f9f9" }}>
+          <div className="container">
             <Switch>
               <Route exact path="/" component={Contacts} />
               <Route exact path="/contact/add" component={AddContact} />

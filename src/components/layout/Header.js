@@ -9,6 +9,7 @@ const Header = props => {
   const red = "#9e363a";
   const greyBlue = "#4f5f76";
   const purple = "#091f36";
+  const offWhite = "#f9f9f9";
   const imageStyle = {width: "80px", height: "80px"};
   const backgroundStyle = {backgroundColor: "#0f2862", padding: "20px 0px"};
   const menuLinksStyle = {};
