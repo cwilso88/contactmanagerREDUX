@@ -1,4 +1,10 @@
 #branding {
     background: rgb(200,74,79);
     background: linear-gradient(0deg, rgba(200,74,79,1) 0%, rgba(237,42,50,0.8072562358276644) 100%);
+    letter-spacing: 3px;
+}
+
+#menu i {
+    color: rgb(200,74,79);
+    color: linear-gradient(0deg, rgba(200,74,79,1) 0%, rgba(237,42,50,0.8072562358276644) 100%); 
 }

@@ -25,7 +25,7 @@ const Header = props => {
           {branding}
         </a>
         <div>
-          <ul className="navbar-nav mr-auto">
+          <ul id="menu" className="navbar-nav mr-auto">
             <li className="nav-item">
               <Link to="/" className="nav-link" style={menuLinksStyle}>
                 <i className="fas fa-home" /> Home
