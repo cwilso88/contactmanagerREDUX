@@ -12,6 +12,7 @@ const Header = props => {
   const imageStyle = {width: "80px", height: "80px"};
   const backgroundStyle = {backgroundColor: "#0f2862", padding: "20px 0px"};
   const menuLinksStyle = {};
+  
 
 
   return (
@@ -20,7 +21,7 @@ const Header = props => {
       <div className="logo-image">
         <img src={logo} alt="logo" style={imageStyle}/>
       </div>
-        <a href="/" className="navbar-brand" style={{ textTransform: "uppercase", backgroundColor: "#091f36", padding: "10px", borderRadius: "10px" }}>
+        <a href="/" className="navbar-brand" id="branding" style={{ textTransform: "uppercase", padding: "7px 25px", borderRadius: "3px" }}>
           {branding}
         </a>
         <div>

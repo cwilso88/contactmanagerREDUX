@@ -9,6 +9,7 @@ import NotFound from './components/pages/NotFound';
 
 import { Provider } from 'react-redux';
 import store from './store';
+import './App.css';
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -20,7 +21,7 @@ class App extends Component {
       <Provider store={store}>
       <Router>
         <div className="App" style={{ backgroundImage: "url(https://i.pinimg.com/originals/f4/54/f7/f454f75292f93e2b6c66846a857edf44.jpg)" }}>
-          <Header branding="Zoplix Tech Consulting" />
+          <Header branding="Tech Consulting" />
           <div className="container" style={{background: "#f9f9f9" }}>
             <Switch>
               <Route exact path="/" component={Contacts} />
