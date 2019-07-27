@@ -28,6 +28,7 @@ class Contact extends Component {
           <img className="ui small circular image" src={image} alt="profile" style={{ paddingBottom: "10px" }} />
         </div>
         
+        <div className="wide column">
         <h4>
           {name}
           <i
@@ -56,6 +57,7 @@ class Contact extends Component {
             />
           </Link>
         </h4>
+        </div>
         </div> 
         {showContactInfo ? (
           <ul className="list-group">
