@@ -25,7 +25,7 @@ class Goals extends Component {
     return (
       <React.Fragment>
         <h1 className="display-4 mb-2" style={{ color: "#4f5f76", marginTop: "60px" }}>
-          <span style={{ color: "#0f2862" }}>Team</span> Goals
+          <span style={{ color: "#0f2862" }}>Department</span> Goals
         </h1>
         <p className="mb-5">
           Manage the department's top priority and secodary goals.

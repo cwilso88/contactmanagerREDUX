@@ -9,7 +9,7 @@ class DepartmentGoals extends Component {
 
 
   render() {
-    const { id, name, goal, goaltwo, departmentLead, image } = this.props.contact;
+    const { id, name, goal, goaltwo, departmentLead } = this.props.contact;
     const { showContactInfo } = this.state;
 
     const listItemStyle = {backgroundColor: "#f9f9f9", borderColor: "#C0C0C0"};
@@ -20,7 +20,7 @@ class DepartmentGoals extends Component {
         <div className="ui grid" style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
         
         <div className="twelve wide column">
-        <h4>
+        <h4 style={{ color: "#f9f9f9", letterSpacing: "3px" }}>
           {name}
 
           <i
