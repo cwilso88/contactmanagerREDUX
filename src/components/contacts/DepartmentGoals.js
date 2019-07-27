@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { deleteContact } from '../../actions/contactActions';
@@ -31,31 +30,6 @@ class DepartmentGoals extends Component {
         <div className="twelve wide column">
         <h4>
           {name}
-          <i
-            onClick={() =>
-              this.setState({
-                showContactInfo: !this.state.showContactInfo
-              })
-            }
-            className="fas fa-sort-down"
-            style={{ cursor: 'pointer' }}
-          />
-          <i
-            className="ui icon trash alternate outline"
-            style={{ cursor: 'pointer', float: 'right', color: '#B22222', paddingLeft: "15px" }}
-            onClick={this.onDeleteClick.bind(this, id)}
-          />
-          <Link to={`contact/edit/${id}`}>
-            <i
-              className="ui icon pencil alternate"
-              style={{
-                cursor: 'pointer',
-                float: 'right',
-                color: '#DCDCDC',
-                marginRight: '1rem'
-              }}
-            />
-          </Link>
         </h4>
         </div>
         </div> 

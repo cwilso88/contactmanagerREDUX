@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Contact from '../../components/contacts/Contact';
+import DepartmentGoals from '../../components/contacts/DepartmentGoals';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { getContacts } from '../../actions/contactActions';
@@ -25,13 +25,13 @@ class Goals extends Component {
     return (
       <React.Fragment>
         <h1 className="display-4 mb-2" style={{ color: "#4f5f76", marginTop: "60px" }}>
-          <span style={{ color: "#0f2862" }}>Team</span> Management
+          <span style={{ color: "#0f2862" }}>Team</span> Goals
         </h1>
         <p className="mb-5">
-          Manage the department team members and overall goals.
+          Manage the department's top priority and secodary goals.
         </p>
         {contacts.map(contact => (
-          <Contact key={contact.id} contact={contact} />
+          <DepartmentGoals key={contact.id} contact={contact} />
         ))}
       </React.Fragment>
     );

@@ -3,7 +3,8 @@ import {
     DELETE_CONTACT,
     ADD_CONTACT,
     GET_CONTACT,
-    UPDATE_CONTACT
+    UPDATE_CONTACT,
+    GET_GOALS
 } from './types';
 import axios from 'axios';
 
@@ -12,6 +13,13 @@ export const getContacts = () => async dispatch => {
     const res = await axios.get('https://testapi.io/api/cwilso88/users');
     dispatch({
         type: GET_CONTACTS,
+        payload: res.data
+    });
+};
+export const getGoals = () => async dispatch => {
+    const res = await axios.get('https://testapi.io/api/cwilso88/departments');
+    dispatch({
+        type: GET_GOALS,
         payload: res.data
     });
 };
