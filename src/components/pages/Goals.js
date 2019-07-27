@@ -23,7 +23,7 @@ class Goals extends Component {
 
 
     return (
-      <React.Fragment>
+      <div style={{ height: "100vh"}}>
         <h1 className="display-4 mb-2" style={{ color: "#4f5f76", marginTop: "60px" }}>
           <span style={{ color: "#0f2862" }}>Department</span> Goals
         </h1>
@@ -33,7 +33,7 @@ class Goals extends Component {
         {contacts.map(contact => (
           <DepartmentGoals key={contact.id} contact={contact} />
         ))}
-      </React.Fragment>
+      </div>
     );
   }
 }

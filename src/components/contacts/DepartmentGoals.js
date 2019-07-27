@@ -12,7 +12,7 @@ class DepartmentGoals extends Component {
     const { id, name, goal, goaltwo, departmentLead } = this.props.contact;
     const { showContactInfo } = this.state;
 
-    const listItemStyle = {backgroundColor: "#f9f9f9", borderColor: "#C0C0C0"};
+    const listItemStyle = {backgroundColor: "#f9f9f9", borderColor: "#C0C0C0", paddingBottom: "25px", paddingTop: "25px"};
     const listTitleStyle = {color: "#0f2862", fontWeight: "bold", paddingLeft: "5px"};
 
     return (
@@ -20,7 +20,7 @@ class DepartmentGoals extends Component {
         <div className="ui grid" style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
         
         <div className="twelve wide column">
-        <h4 style={{ color: "#f9f9f9", letterSpacing: "3px" }}>
+        <h4 style={{ color: "#f9f9f9", letterSpacing: "3px", paddingBottom: "20px" }}>
           {name}
 
           <i
