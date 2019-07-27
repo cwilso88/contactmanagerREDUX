@@ -23,7 +23,7 @@ class Contact extends Component {
 
     return (
       <div className="card card-body mb-3">
-        <div className="ui grid">
+        <div className="ui grid" style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
         <div className="three wide column">
           <img className="ui small circular image" src={image} alt="profile" style={{ paddingBottom: "10px" }} />
         </div>
