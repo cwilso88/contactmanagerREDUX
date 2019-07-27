@@ -10,13 +10,17 @@ class AddContact extends Component {
     name: '',
     email: '',
     phone: '',
+    department: '',
+    status: '',
+    location: '',
+    image: '',
     errors: {}
   };
 
   onSubmit = (e) => {
     e.preventDefault();
 
-    const { name, email, phone } = this.state;
+    const { name, email, phone, department, status, location, image } = this.state;
 
     // Check For Errors
     if (name === '') {
@@ -34,10 +38,19 @@ class AddContact extends Component {
       return;
     }
 
+    if (image === '') {
+      this.setState({ image: 'https://mytek.net/images/easyblog_shared/July_2018/7-4-18/b2ap3_large_totw_network_profile_400.jpg' });
+      return;
+    }
+
     const newContact = {
       name,
       email,
-      phone
+      phone, 
+      department, 
+      status,
+      location,
+      image
     };
 
     // ADD NEW CONTACT
@@ -48,6 +61,10 @@ class AddContact extends Component {
       name: '',
       email: '',
       phone: '',
+      department: '',
+      status: '',
+      location: '',
+      image: '',
       errors: {}
     });
 
@@ -57,7 +74,7 @@ class AddContact extends Component {
   onChange = e => this.setState({ [e.target.name]: e.target.value });
 
   render() {
-    const { name, email, phone, department, location, status, errors } = this.state;
+    const { name, email, phone, department, location, status, image, errors } = this.state;
     const cardHeaderStyles = {backgroundColor: "#D3D3D3", color: "#0f2862", textTransform: "uppercase", letterSpacing:"2px", fontWeight: "bold", textAlign: "center", padding: "20px" };
     const formButtonStyles = {backgroundColor: "#0f2862", color: "#f9f9f9", letterSpacing: "2px"};
     return (
@@ -88,6 +105,38 @@ class AddContact extends Component {
                 name="phone"
                 placeholder="Enter Phone"
                 value={phone}
+                onChange={this.onChange}
+                error={errors.phone}
+              />
+              <TextInputGroup
+                label="Department"
+                name="department"
+                placeholder="Enter Department"
+                value={department}
+                onChange={this.onChange}
+                error={errors.phone}
+              />
+              <TextInputGroup
+                label="Status"
+                name="status"
+                placeholder="Online, Away, or Offline"
+                value={status}
+                onChange={this.onChange}
+                error={errors.phone}
+              />
+              <TextInputGroup
+                label="Location"
+                name="location"
+                placeholder="Remote or Office"
+                value={location}
+                onChange={this.onChange}
+                error={errors.phone}
+              />
+              <TextInputGroup
+                label="Image"
+                name="image"
+                placeholder="Professional Profile Picture"
+                value={image}
                 onChange={this.onChange}
                 error={errors.phone}
               />

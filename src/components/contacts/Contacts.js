@@ -14,13 +14,6 @@ class Contacts extends Component {
   
   render() {
     const { contacts } = this.props;
-    const blue = "#0f2862";
-    const red = "#9e363a";
-    const greyBlue = "#4f5f76";
-    const purple = "#091f36";
-
-    const title = {color: "#9e363a"};
-
 
     return (
       <React.Fragment>

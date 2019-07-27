@@ -14,13 +14,6 @@ class Goals extends Component {
   
   render() {
     const { contacts } = this.props;
-    const blue = "#0f2862";
-    const red = "#9e363a";
-    const greyBlue = "#4f5f76";
-    const purple = "#091f36";
-
-    const title = {color: "#9e363a"};
-
 
     return (
       <div style={{ height: "100vh"}}>
@@ -40,7 +33,7 @@ class Goals extends Component {
 
 Goals.propTypes = {
   contacts: PropTypes.array.isRequied,
-  getContacts: PropTypes.func.isRequired
+  getGoals: PropTypes.func.isRequired
 }
 
 const mapStateToProps = (state) => ({

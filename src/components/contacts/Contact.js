@@ -51,7 +51,7 @@ class Contact extends Component {
               style={{
                 cursor: 'pointer',
                 float: 'right',
-                color: '#FFF0F5',
+                color: 'mediumseagreen',
                 marginRight: '1rem'
               }}
             />
