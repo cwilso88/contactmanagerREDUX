@@ -1,17 +1,12 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { deleteContact } from '../../actions/contactActions';
 
 class DepartmentGoals extends Component {
   state = {
     showContactInfo: false
   };
 
-  onDeleteClick = id => {
-    this.props.deleteContact(id);
-
-  };
 
   render() {
     const { id, name, goal, goaltwo, departmentLead, image } = this.props.contact;
@@ -30,6 +25,16 @@ class DepartmentGoals extends Component {
         <div className="twelve wide column">
         <h4>
           {name}
+
+          <i
+            onClick={() =>
+              this.setState({
+                showContactInfo: !this.state.showContactInfo
+              })
+            }
+            className="fas fa-sort-down"
+            style={{ cursor: 'pointer' }}
+          />
         </h4>
         </div>
         </div> 
@@ -48,8 +53,6 @@ class DepartmentGoals extends Component {
 
 DepartmentGoals.propTypes = {
   contact: PropTypes.object.isRequired,
-  deleteContact: PropTypes.func.isRequired
-
 };
 
-export default connect(null, { deleteContact })(DepartmentGoals);
+export default connect(null, { })(DepartmentGoals);

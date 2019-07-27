@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import DepartmentGoals from '../../components/contacts/DepartmentGoals';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { getContacts } from '../../actions/contactActions';
+import { getGoals } from '../../actions/contactActions';
 
 
 
 class Goals extends Component {
 
   componentDidMount() {
-    this.props.getContacts();
+    this.props.getGoals();
   }
   
   render() {
@@ -47,4 +47,4 @@ const mapStateToProps = (state) => ({
   contacts: state.contact.contacts
 });
 
-export default connect(mapStateToProps, { getContacts })(Goals);
+export default connect(mapStateToProps, { getGoals })(Goals);
