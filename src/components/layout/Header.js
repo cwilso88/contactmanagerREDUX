@@ -38,6 +38,11 @@ const Header = props => {
               </Link>
             </li>
             <li className="nav-item">
+              <Link to="/goals" className="nav-link" style={menuLinksStyle}>
+                <i className="fas fa-bullseye" /> Goals
+              </Link>
+            </li>
+            <li className="nav-item">
               <Link to="/about" className="nav-link" style={menuLinksStyle}>
                 <i className="fas fa-question" /> About
               </Link>

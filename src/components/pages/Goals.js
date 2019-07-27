@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import Contact from './Contact';
+import Contact from '../../components/contacts/Contact';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { getContacts } from '../../actions/contactActions';
 
 
 
-class Contacts extends Component {
+class Goals extends Component {
 
   componentDidMount() {
     this.props.getContacts();
@@ -38,7 +38,7 @@ class Contacts extends Component {
   }
 }
 
-Contacts.propTypes = {
+Goals.propTypes = {
   contacts: PropTypes.array.isRequied,
   getContacts: PropTypes.func.isRequired
 }
@@ -47,4 +47,4 @@ const mapStateToProps = (state) => ({
   contacts: state.contact.contacts
 });
 
-export default connect(mapStateToProps, { getContacts })(Contacts);
+export default connect(mapStateToProps, { getContacts })(Goals);

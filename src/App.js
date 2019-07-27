@@ -6,6 +6,7 @@ import EditContact from './components/contacts/EditContact';
 import Header from './components/layout/Header';
 import About from './components/pages/About';
 import NotFound from './components/pages/NotFound';
+import Goals from './components/pages/Goals';
 
 import { Provider } from 'react-redux';
 import store from './store';
@@ -28,6 +29,7 @@ class App extends Component {
               <Route exact path="/contact/add" component={AddContact} />
               <Route exact path="/contact/edit/:id" component={EditContact} />
               <Route exact path="/about" component={About} />
+              <Route exact path="/goals" component={Goals} />
               <Route component={NotFound} />
             </Switch>
           </div>
