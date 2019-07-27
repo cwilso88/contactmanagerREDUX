@@ -28,7 +28,7 @@ class Contact extends Component {
           <img className="ui small circular image" src={image} alt="profile" style={{ paddingBottom: "10px" }} />
         </div>
         
-        <div className="thirteen wide column">
+        <div className="twelve wide column">
         <h4>
           {name}
           <i
@@ -41,13 +41,13 @@ class Contact extends Component {
             style={{ cursor: 'pointer' }}
           />
           <i
-            className="fa fa-trash"
-            style={{ cursor: 'pointer', float: 'right', color: '#9e363a', paddingLeft: "15px" }}
+            className="ui icon trash alternate outline"
+            style={{ cursor: 'pointer', float: 'right', color: '#B22222', paddingLeft: "15px" }}
             onClick={this.onDeleteClick.bind(this, id)}
           />
           <Link to={`contact/edit/${id}`}>
             <i
-              className="fas fa-pencil-alt"
+              className="ui icon pencil alternate"
               style={{
                 cursor: 'pointer',
                 float: 'right',
