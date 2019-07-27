@@ -18,9 +18,6 @@ class DepartmentGoals extends Component {
     return (
       <div className="card card-body mb-3" style={{ backgroundColor: "#4f5f76"}}>
         <div className="ui grid" style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-        <div className="three wide column">
-          <img className="ui small circular image" src={image} alt="profile" style={{ paddingBottom: "10px" }} />
-        </div>
         
         <div className="twelve wide column">
         <h4>
@@ -40,10 +37,10 @@ class DepartmentGoals extends Component {
         </div> 
         {showContactInfo ? (
           <ul className="list-group">
-            <li className="list-group-item" style={listItemStyle}> <i className="fas fa-envelope"></i> <span style={listTitleStyle}>Top Priority:</span> {goal}</li>
-            <li className="list-group-item" style={listItemStyle}> <i className="fas fa-phone"></i> <span style={listTitleStyle}>Secondary Goal</span>: {goaltwo}</li>
+            <li className="list-group-item" style={listItemStyle}> <i className="fas fa-bullseye"></i> <span style={listTitleStyle}>Top Priority:</span> {goal}</li>
+            <li className="list-group-item" style={listItemStyle}> <i className="fas fa-bullseye"></i> <span style={listTitleStyle}>Secondary Goal</span>: {goaltwo}</li>
             <li className="list-group-item" style={listItemStyle}> <i className="fas fa-sitemap"></i> <span style={listTitleStyle}>Department Lead</span>: {departmentLead.name}</li>
-            <li className="list-group-item" style={listItemStyle}> <i className="fas fa-map-marker-alt"></i> <span style={listTitleStyle}>Department Lead Email</span>: {departmentLead.email}</li>
+            <li className="list-group-item" style={listItemStyle}> <i className="fas fa-envelope"></i> <span style={listTitleStyle}>Department Lead Email</span>: {departmentLead.email}</li>
           </ul>
         ) : null}
       </div>
