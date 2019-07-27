@@ -15,7 +15,7 @@ class DepartmentGoals extends Component {
   };
 
   render() {
-    const { id, name, email, phone, department, status, location, image } = this.props.contact;
+    const { id, name, goal, goaltwo, departmentLead, image } = this.props.contact;
     const { showContactInfo } = this.state;
 
     const listItemStyle = {backgroundColor: "#f9f9f9", borderColor: "#C0C0C0"};
@@ -61,11 +61,10 @@ class DepartmentGoals extends Component {
         </div> 
         {showContactInfo ? (
           <ul className="list-group">
-            <li className="list-group-item" style={listItemStyle}> <i className="fas fa-envelope"></i> <span style={listTitleStyle}>Email:</span> {email}</li>
-            <li className="list-group-item" style={listItemStyle}> <i className="fas fa-phone"></i> <span style={listTitleStyle}>Phone</span>: {phone}</li>
-            <li className="list-group-item" style={listItemStyle}> <i className="fas fa-sitemap"></i> <span style={listTitleStyle}>Department</span>: {department}</li>
-            <li className="list-group-item" style={listItemStyle}> <i className="fas fa-map-marker-alt"></i> <span style={listTitleStyle}>Work Location</span>: {location}</li>
-            <li className="list-group-item" style={listItemStyle}> <span style={listTitleStyle}>Current Status</span>: {status}</li>
+            <li className="list-group-item" style={listItemStyle}> <i className="fas fa-envelope"></i> <span style={listTitleStyle}>Top Priority:</span> {goal}</li>
+            <li className="list-group-item" style={listItemStyle}> <i className="fas fa-phone"></i> <span style={listTitleStyle}>Secondary Goal</span>: {goaltwo}</li>
+            <li className="list-group-item" style={listItemStyle}> <i className="fas fa-sitemap"></i> <span style={listTitleStyle}>Department Lead</span>: {departmentLead.name}</li>
+            <li className="list-group-item" style={listItemStyle}> <i className="fas fa-map-marker-alt"></i> <span style={listTitleStyle}>Department Lead Email</span>: {departmentLead.email}</li>
           </ul>
         ) : null}
       </div>
@@ -73,7 +72,7 @@ class DepartmentGoals extends Component {
   }
 }
 
-Contact.propTypes = {
+DepartmentGoals.propTypes = {
   contact: PropTypes.object.isRequired,
   deleteContact: PropTypes.func.isRequired
 
