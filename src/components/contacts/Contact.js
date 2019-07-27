@@ -24,11 +24,11 @@ class Contact extends Component {
     return (
       <div className="card card-body mb-3">
         <div className="ui grid">
-        <div>
+        <div className="three wide column">
           <img className="ui small circular image" src={image} alt="profile" style={{ paddingBottom: "10px" }} />
         </div>
         
-        <div className="wide column">
+        <div className="thirteen wide column">
         <h4>
           {name}
           <i
