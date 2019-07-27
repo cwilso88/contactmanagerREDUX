@@ -23,6 +23,7 @@ class Contact extends Component {
 
     return (
       <div className="card card-body mb-3">
+        <div className="ui grid">
         <div>
           <img className="ui small circular image" src={image} alt="profile" style={{ paddingBottom: "10px" }} />
         </div>
@@ -55,7 +56,7 @@ class Contact extends Component {
             />
           </Link>
         </h4>
-        
+        </div> 
         {showContactInfo ? (
           <ul className="list-group">
             <li className="list-group-item" style={listItemStyle}> <i className="fas fa-envelope"></i> <span style={listTitleStyle}>Email:</span> {email}</li>
