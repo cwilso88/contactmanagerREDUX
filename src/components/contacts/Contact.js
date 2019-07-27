@@ -22,7 +22,7 @@ class Contact extends Component {
     const listTitleStyle = {color: "#0f2862", fontWeight: "bold", paddingLeft: "5px"};
 
     return (
-      <div className="card card-body mb-3">
+      <div className="card card-body mb-3" style={{ backgroundColor: "#4f5f76"}}>
         <div className="ui grid" style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
         <div className="three wide column">
           <img className="ui small circular image" src={image} alt="profile" style={{ paddingBottom: "10px" }} />
