@@ -37,8 +37,8 @@ class DepartmentGoals extends Component {
         </div> 
         {showContactInfo ? (
           <ul className="list-group">
-            <li className="list-group-item" style={listItemStyle}> <i className="fas fa-bullseye"></i> <span style={listTitleStyle}>Top Priority:</span> {goal}</li>
-            <li className="list-group-item" style={listItemStyle}> <i className="fas fa-bullseye"></i> <span style={listTitleStyle}>Secondary Goal</span>: {goaltwo}</li>
+            <li className="list-group-item" style={listItemStyle}> <i className="fas fa-bullseye" style={{ color: "red" }}></i> <span style={listTitleStyle}>Top Priority:</span> {goal}</li>
+            <li className="list-group-item" style={listItemStyle}> <i className="fas fa-bullseye" style={{ color: "orange" }}></i> <span style={listTitleStyle}>Secondary Goal</span>: {goaltwo}</li>
             <li className="list-group-item" style={listItemStyle}> <i className="fas fa-sitemap"></i> <span style={listTitleStyle}>Department Lead</span>: {departmentLead.name}</li>
             <li className="list-group-item" style={listItemStyle}> <i className="fas fa-envelope"></i> <span style={listTitleStyle}>Department Lead Email</span>: {departmentLead.email}</li>
           </ul>
