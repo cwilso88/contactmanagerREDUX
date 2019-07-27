@@ -38,7 +38,7 @@ class Contact extends Component {
               })
             }
             className="fas fa-sort-down"
-            style={{ cursor: 'pointer' }}
+            style={{ cursor: 'pointer', paddingLeft: "7px" }}
           />
           <i
             className="ui icon trash alternate outline"

@@ -30,7 +30,7 @@ class DepartmentGoals extends Component {
               })
             }
             className="fas fa-sort-down"
-            style={{ cursor: 'pointer' }}
+            style={{ cursor: 'pointer', paddingLeft: "5px" }}
           />
         </h4>
         </div>
