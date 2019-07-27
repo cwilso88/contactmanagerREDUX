@@ -18,12 +18,12 @@ class Contact extends Component {
     const { id, name, email, phone, department, status, location, image } = this.props.contact;
     const { showContactInfo } = this.state;
 
-    const listItemStyle = {backgroundColor: "#f9f9f9", borderColor: "#C0C0C0"};
+    const listItemStyle = {backgroundColor: "#f9f9f9", borderColor: "#C0C0C0", paddingBottom: "25px", paddingTop: "25px"};
     const listTitleStyle = {color: "#0f2862", fontWeight: "bold", paddingLeft: "5px"};
 
     return (
       <div className="card card-body mb-3" style={{ backgroundColor: "#4f5f76"}}>
-        <div className="ui grid" style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+        <div className="ui grid" style={{ display: "flex", alignItems: "center", justifyContent: "center", paddingBottom: "20px" }}>
         <div className="three wide column">
           <img className="ui small circular image" src={image} alt="profile" style={{ paddingBottom: "10px" }} />
         </div>
@@ -47,11 +47,11 @@ class Contact extends Component {
           />
           <Link to={`contact/edit/${id}`}>
             <i
-              className="ui icon pencil alternate"
+              className="ui icon edit outline"
               style={{
                 cursor: 'pointer',
                 float: 'right',
-                color: '#DCDCDC',
+                color: '#FFF0F5',
                 marginRight: '1rem'
               }}
             />
