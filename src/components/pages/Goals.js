@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import DepartmentGoals from '../../components/contacts/DepartmentGoals';
 import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
 import { getGoals } from '../../actions/contactActions';
 
 
@@ -31,10 +30,7 @@ class Goals extends Component {
   }
 }
 
-Goals.propTypes = {
-  contacts: PropTypes.array.isRequied,
-  getGoals: PropTypes.func.isRequired
-}
+
 
 const mapStateToProps = (state) => ({
   contacts: state.contact.contacts
