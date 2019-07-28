@@ -10,7 +10,7 @@ import axios from 'axios';
 
 
 export const getContacts = () => async dispatch => {
-    const res = await axios.get('http://localhost:3001/users');
+    const res = await axios.get('https://jsonserverapi.firebaseapp.com/api/users');
     dispatch({
         type: GET_CONTACTS,
         payload: res.data
