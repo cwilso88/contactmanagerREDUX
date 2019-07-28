@@ -15,7 +15,7 @@ const Header = props => {
   return (
     <nav className="navbar navbar-expand-sm navbar-dark mb-3" style={backgroundStyle}>
       <div className="container">
-      <div className="logo-image">
+      <div className="logo-image" style={{ marginLeft: "10px" }}>
         <img src={logo} alt="logo" style={imageStyle}/>
       </div>
         <a href="/" className="navbar-brand" id="branding" style={{ textTransform: "uppercase", padding: "7px 25px", borderRadius: "3px" }}>
