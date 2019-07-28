@@ -18,7 +18,7 @@ const Header = props => {
       <div className="logo-image" style={{ marginLeft: "10px" }}>
         <img src={logo} alt="logo" style={imageStyle}/>
       </div>
-        <a href="/" className="navbar-brand" id="branding" style={{ textTransform: "uppercase", padding: "7px 25px", borderRadius: "3px" }}>
+        <a href="/" className="navbar-brand" id="branding" style={{ textTransform: "uppercase", padding: "17px 30px", borderRadius: "3px" }}>
           {branding}
         </a>
         <div>

@@ -22,7 +22,7 @@ class App extends Component {
       <Provider store={store}>
       <Router>
         <div className="App" style={{ backgroundImage: "url(https://i.pinimg.com/originals/f4/54/f7/f454f75292f93e2b6c66846a857edf44.jpg)", paddingBottom: "20px" }}>
-          <Header branding="Tech Consulting" />
+          <Header branding="Tech Consulting Team" />
           <div className="container">
             <Switch>
               <Route exact path="/" component={Contacts} />

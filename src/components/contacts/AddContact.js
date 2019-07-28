@@ -134,7 +134,7 @@ class AddContact extends Component {
               <TextInputGroup
                 label="Image"
                 name="image"
-                placeholder="Professional Profile Picture"
+                placeholder="Professional Profile Picture URL"
                 value={image}
                 onChange={this.onChange}
                 error={errors.phone}

@@ -21,7 +21,7 @@ class Goals extends Component {
           <span style={{ color: "#0f2862" }}>Department</span> Goals
         </h1>
         <p className="mb-5">
-          Manage the department's top priority and secodary goals.
+           Track the department's top priority and secodary goals.
         </p>
         {contacts.map(contact => (
           <DepartmentGoals key={contact.id} contact={contact} />
