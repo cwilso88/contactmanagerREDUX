@@ -9,7 +9,7 @@ class DepartmentGoals extends Component {
 
 
   render() {
-    const { id, name, goal, goaltwo, departmentLead } = this.props.contact;
+    const { name, goal, goaltwo, departmentLead } = this.props.contact;
     const { showContactInfo } = this.state;
 
     const listItemStyle = {backgroundColor: "#f9f9f9", borderColor: "#C0C0C0", paddingBottom: "25px", paddingTop: "25px", fontSize: "20px"};
