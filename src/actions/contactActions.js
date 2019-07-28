@@ -17,35 +17,35 @@ export const getContacts = () => async dispatch => {
     });
 };
 export const getGoals = () => async dispatch => {
-    const res = await axios.get('http://localhost:3001/departments');
+    const res = await axios.get('https://jsonserverapi.firebaseapp.com/api/departments');
     dispatch({
         type: GET_GOALS,
         payload: res.data
     });
 };
 export const getContact = (id) => async dispatch => {
-    const res = await axios.get(`http://localhost:3001/users/${id}`);
+    const res = await axios.get(`https://jsonserverapi.firebaseapp.com/api/users/${id}`);
     dispatch({
         type: GET_CONTACT,
         payload: res.data
     });
 };
 export const deleteContact = (id) => async dispatch => {
-    await axios.delete(`http://localhost:3001/users/${id}`);
+    await axios.delete(`https://jsonserverapi.firebaseapp.com/api/users/${id}`);
     dispatch({
         type: DELETE_CONTACT,
         payload: id
     });
 };
 export const addContact = (contact) => async dispatch => {
-    const res = await axios.post('http://localhost:3001/users', contact);
+    const res = await axios.post('https://jsonserverapi.firebaseapp.com/api/users', contact);
     dispatch({
         type: ADD_CONTACT,
         payload: res.data
     });
 };
 export const updateContact = (contact) => async dispatch => {
-    const res = await axios.patch(`http://localhost:3001/users/${contact.id}`, contact);
+    const res = await axios.patch(`https://jsonserverapi.firebaseapp.com/api/users/${contact.id}`, contact);
     dispatch({
         type: UPDATE_CONTACT,
         payload: res.data
