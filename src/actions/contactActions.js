@@ -32,7 +32,7 @@ export const getContact = (id) => async dispatch => {
     });
 };
 export const deleteContact = (id) => async dispatch => {
-    await axios.delete(`https://testapi.io/api/cwilso88/users/${id}`);
+    await axios.delete(`https://cors-anywhere.herokuapp.com/https://testapi.io/api/cwilso88/users/${id}`);
     dispatch({
         type: DELETE_CONTACT,
         payload: id
