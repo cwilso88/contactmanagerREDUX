@@ -25,7 +25,7 @@ export const getGoals = () => async dispatch => {
     });
 };
 export const getContact = (id) => async dispatch => {
-    const res = await axios.get(`https://testapi.io/api/cwilso88/users/${id}`);
+    const res = await axios.get(`https://cors-anywhere.herokuapp.com/https://testapi.io/api/cwilso88/users/${id}`);
     dispatch({
         type: GET_CONTACT,
         payload: res.data
@@ -39,14 +39,14 @@ export const deleteContact = (id) => async dispatch => {
     });
 };
 export const addContact = (contact) => async dispatch => {
-    const res = await axios.post('https://testapi.io/api/cwilso88/users/', contact);
+    const res = await axios.post('https://cors-anywhere.herokuapp.com/https://testapi.io/api/cwilso88/users/', contact);
     dispatch({
         type: ADD_CONTACT,
         payload: res.data
     });
 };
 export const updateContact = (contact) => async dispatch => {
-    const res = await axios.patch(`https://testapi.io/api/cwilso88/users/${contact.id}`, contact);
+    const res = await axios.patch(`https://cors-anywhere.herokuapp.com/https://testapi.io/api/cwilso88/users/${contact.id}`, contact);
     dispatch({
         type: UPDATE_CONTACT,
         payload: res.data
