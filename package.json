@@ -2,7 +2,7 @@
   "name": "contactmanager",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://cwilso88.github.io/contactmanagerREDUX",
+  "homepage": "https://departmentcontacts-3888e.firebaseapp.com/",
   "dependencies": {
     "axios": "^0.18.0",
     "bootstrap": "^4.1.2",
